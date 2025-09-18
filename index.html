@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Valeria De Barros">
+
+    <title>Calculadora - Valeria</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>CALCULADORA</h1>
+    </header>
+
+    <nav></nav>
+
+    <main>
+        <table>
+            <tr>
+                <td colspan="4" id="pantalla">0</td>
+            </tr>
+            <tr>
+                <td class="operador">?</td>
+                <td onclick="borrar()" class="operador" class="operador">C</td>
+                <td onclick="borrarUltimo()" class="operador"><-</td>   
+                <td class="operador">/</td>
+            </tr>
+            <tr>
+                <td onclick="numero(1)">1</td>
+                <td onclick="numero(2)">2</td>
+                <td onclick="numero(3)">3</td>
+                <td class="operador">+</td>
+            </tr>
+            <tr>
+                <td onclick="numero(4)">4</td>
+                <td onclick="numero(5)">5</td>
+                <td onclick="numero(6)">6</td>
+                <td class="operador">-</td>
+            </tr>
+            <tr>
+                <td onclick="numero(7)">7</td>
+                <td onclick="numero(8)">8</td>
+                <td onclick="numero(9)">9</td>
+                <td class="operador">*</td>
+            </tr>
+            <tr>
+                <td class="operador">+/-</td>
+                <td onclick="numero(0)">0</td>
+                <td class="operador">,</td>
+                <td class="operador">?</td>
+            </tr>
+            <tr>
+                <td colspan="4" id="igual">=</td>
+            </tr>
+        </table>
+    </main>
+
+
+    <footer></footer>
+
+    <script src="calculadora.js"></script>
+</body>
+
+</html>
