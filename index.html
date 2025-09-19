@@ -28,25 +28,25 @@
                 <td class="operador">?</td>
                 <td onclick="borrar()" class="operador" class="operador">C</td>
                 <td onclick="borrarUltimo()" class="operador"><-</td>   
-                <td class="operador">/</td>
+                <td class="operador" onclick="operar('/')">/</td>
             </tr>
             <tr>
                 <td onclick="numero(1)">1</td>
                 <td onclick="numero(2)">2</td>
                 <td onclick="numero(3)">3</td>
-                <td class="operador">+</td>
+                <td class="operador" onclick="operar('+')">+</td>
             </tr>
             <tr>
                 <td onclick="numero(4)">4</td>
                 <td onclick="numero(5)">5</td>
                 <td onclick="numero(6)">6</td>
-                <td class="operador">-</td>
+                <td class="operador" onclick="operar('-')">-</td>
             </tr>
             <tr>
                 <td onclick="numero(7)">7</td>
                 <td onclick="numero(8)">8</td>
                 <td onclick="numero(9)">9</td>
-                <td class="operador">*</td>
+                <td class="operador" onclick="operar('*')">*</td>
             </tr>
             <tr>
                 <td class="operador">+/-</td>
@@ -55,7 +55,7 @@
                 <td class="operador">?</td>
             </tr>
             <tr>
-                <td colspan="4" id="igual">=</td>
+                <td colspan="4" id="igual" onclick="calcular()">=</td>
             </tr>
         </table>
     </main>
