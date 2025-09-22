@@ -44,6 +44,8 @@ td{
    transition: all ease 0.3s;
    border: 1px solid #ddd;
    text-align: center;
+   color: gray;
+   font-weight: bold;
 
 }
 
@@ -58,4 +60,8 @@ td:hover{
 .operador:hover{
     background-color: #2196f3;
     color: white;
+}
+.operador{
+    font-weight: bolder;
+    color: black;
 }
