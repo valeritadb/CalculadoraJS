@@ -22,40 +22,45 @@
     <main>
         <table>
             <tr>
-                <td colspan="4" id="pantalla">0</td>
+                <td colspan="5" id="pantalla">0</td>
             </tr>
             <tr>
-                <td class="operador">?</td>
                 <td onclick="borrar()" class="operador" class="operador">C</td>
-                <td onclick="borrarUltimo()" class="operador"><-</td>   
+                <td class="operador" onclick="raizCuadrada()">√</td>   
                 <td class="operador" onclick="operar('/')">/</td>
+                <td onclick="borrarUltimo()" class="operador"><-</td>   
+                <td class="operador" onclick="elevarCuadrado()">x²</td>
             </tr>
             <tr>
                 <td onclick="numero(1)">1</td>
                 <td onclick="numero(2)">2</td>
                 <td onclick="numero(3)">3</td>
                 <td class="operador" onclick="operar('+')">+</td>
+                <td class="operador" onclick="elevarCubo()">x³</td>
             </tr>
             <tr>
                 <td onclick="numero(4)">4</td>
                 <td onclick="numero(5)">5</td>
                 <td onclick="numero(6)">6</td>
                 <td class="operador" onclick="operar('-')">-</td>
+                <td class="operador" onclick="seno()">sen</td>
             </tr>
             <tr>
                 <td onclick="numero(7)">7</td>
                 <td onclick="numero(8)">8</td>
                 <td onclick="numero(9)">9</td>
                 <td class="operador" onclick="operar('*')">*</td>
+                <td class="operador" onclick="coseno">cos</td>
             </tr>
             <tr>
-                <td class="operador">+/-</td>
+                <td class="operador" onclick="cambiarSigno()">+/-</td>
                 <td onclick="numero(0)">0</td>
-                <td class="operador">,</td>
-                <td class="operador">?</td>
+                <td class="operador" onclick="agregarDecimal()">,</td>
+                <td class="operador" onclick="agregarPi()">π</td>
+                <td class="operador" onclick="tangente()">tan</td>
             </tr>
             <tr>
-                <td colspan="4" id="igual" onclick="calcular()">=</td>
+                <td colspan="5" id="igual" onclick="calcular()">=</td>
             </tr>
         </table>
     </main>
